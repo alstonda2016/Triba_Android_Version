@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorBackground">#111111</color>
+
+    <color name="colorAccent">#a2c6ea</color>
+    <color name="colorForTextInDarkColor">#d5e4f2</color>
+    <color name="colorSendMessageBack">#ff4081</color>
+    <color name="half_full_purple_back">#662a32d4</color>
+
+
+    <color name="tribaPurple">#4A3ECD</color>
+    <color name="tribaBlue">#239BFF</color>
+    <color name="tribaGreen">#26ae90</color>
+    <color name="tribaPink">#DD3B73</color>
+    <color name="tribaBack">#d4181818</color>
+    <color name="tribaBackSettings">#181818</color>
+
+
+
+    <color name="tribaUp">#1cad6f</color>
+    <color name="tribaDown">#FF2600</color>
+    <color name="tribaNote">#D4AF37</color>
+    <color name="settingsback">#42000000</color>
+
+</resources>

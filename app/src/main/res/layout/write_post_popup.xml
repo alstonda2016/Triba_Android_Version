@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan">
+
+
+    <Button
+        android:id="@+id/btnClosePopover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="30dp"
+        android:background="@android:color/transparent"
+        android:text="X"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/custom_back"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etxtPostText"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="What's Up?"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+
+
+            android:singleLine="false"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/com_facebook_button_background_color_focused_disabled">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnWritePostUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="  Post  "
+                android:textColor="@color/tribaGreen" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

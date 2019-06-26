@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/custom_back"
+    android:bottomLeftRadius="10dp"
+    android:bottomRightRadius="10dp"
+    android:orientation="horizontal"
+    android:topLeftRadius="10dp"
+    android:topRightRadius="10dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.91"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtChatUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingLeft="7dp"
+            android:text="TextView"
+            android:textColor="@color/tribaGreen" />
+
+        <TextView
+            android:id="@+id/txtChatText"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textColor="@color/cardview_light_background"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="2sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnChatHomeLike"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/likeheart" />
+
+        <TextView
+            android:id="@+id/txtPostRating"
+            android:layout_width="95dp"
+            android:layout_height="3dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/colorBackground"
+            android:textSize="50sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnChatHomeReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Admin"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

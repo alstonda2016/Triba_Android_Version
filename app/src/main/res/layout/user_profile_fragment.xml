@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileFragLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myProfile_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:navigationIcon="@color/colorSendMessageBack"
+        app:titleTextColor="@color/cardview_light_background">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="23dp"
+                app:srcCompat="@drawable/tribalogotextnoshadowontextcopy" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="4dp"
+
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtUserProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.096" />
+
+            <TextView
+                android:id="@+id/txtUserProfileName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="0dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.096" />
+
+            <View
+                android:id="@+id/viewSeparator2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0"
+                android:background="@color/zxing_transparent" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnGoToUserHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/btnRemoveAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorForTextInDarkColor"
+        android:text="User Post History"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63"
+        />
+
+    <Button
+        android:id="@+id/btnRemoveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorForTextInDarkColor"
+        android:text="Signout"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:stretchColumns="*"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight=".91"
+                    android:background="@drawable/tab_back"
+                    android:padding="0dp">
+
+                    <Button
+                        android:id="@+id/btnShowNotesProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/tab_button_back"
+                        android:text="My Board"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/btnShowMyHistoryProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/tab_button_back"
+                        android:text="My Posts"
+                        android:textAllCaps="false" />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/txtTabDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="italic"
+                android:visibility="visible"
+                tools:text="hihihi" />
+
+            <View
+                android:id="@+id/viewSeparator3"
+                android:layout_width="match_parent"
+                android:layout_height=".8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:background="@color/cardview_light_background" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/profileList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:dividerHeight="5dp" />
+
+
+</LinearLayout>

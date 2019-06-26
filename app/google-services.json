@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1085469394684",
+    "firebase_url": "https://fbspftafkak.firebaseio.com",
+    "project_id": "fbspftafkak",
+    "storage_bucket": "fbspftafkak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085469394684:android:89b7c74e9bd42f39",
+        "android_client_info": {
+          "package_name": "com.davida.tatwpbnw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085469394684-6n1mc4p00uchmvgjfhpn0jk8q2jpkdjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxnHzfhgWecEi0VZtpgiKtICLwt1iX95Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

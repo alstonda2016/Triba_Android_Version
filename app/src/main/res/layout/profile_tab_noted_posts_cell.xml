@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/custom_back">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRemoveNotedPost"
+        app:layout_constraintStart_toEndOf="@+id/txtNotedCellProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtNotedCellProfile"
+        android:layout_width="181dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="15dp"
+
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRemoveNotedPost"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="17dp"
+
+        android:layout_weight="1"
+        android:background="@drawable/button_dropnote_back"
+        android:text="drop"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

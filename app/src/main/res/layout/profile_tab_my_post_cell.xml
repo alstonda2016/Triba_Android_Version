@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/custom_back"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="36dp"
+
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="36dp"
+
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/txtMyProfileHistoryCellText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMyProfileHistoryCellText"
+        android:layout_width="184dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="15dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+
+
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+
+        android:layout_marginEnd="12dp"
+
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571">
+
+        <TextView
+            android:id="@+id/txtMyProfileHistoryActiveStatus"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/cardview_light_background"
+            tools:layout_editor_absoluteX="281dp"
+            tools:layout_editor_absoluteY="34dp" />
+
+        <Button
+            android:id="@+id/btnMyHistoryDeactivatePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Deactivate"
+            android:textColor="@color/tribaGreen"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="291dp"
+            tools:layout_editor_absoluteY="109dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

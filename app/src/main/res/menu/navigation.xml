@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icons8_compass_filled_100" />
+
+    <item
+        android:id="@+id/navigation_Search"
+        android:icon="@drawable/triba_add_btn" />
+    <item
+        android:id="@+id/navigation_Noted"
+        android:icon="@drawable/icons8_customer_100" />
+
+</menu>

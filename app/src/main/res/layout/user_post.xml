@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/custom_back"
+    android:bottomLeftRadius="10dp"
+    android:bottomRightRadius="10dp"
+    android:orientation="vertical"
+    android:topLeftRadius="10dp"
+    android:topRightRadius="10dp"
+    android:weightSum="1">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.91"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/userText"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="roboto"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeStepGranularity="2sp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0"
+                android:background="@color/zxing_transparent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0"
+                android:background="@color/cardview_light_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+                <Button
+                    android:id="@+id/btnReportPost"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/roboto"
+                    android:scaleType="fitXY"
+                    android:text="Report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background" />
+
+                <ImageButton
+                    android:id="@+id/btnNotePost"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="23dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="23dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tackv3lres"
+                    android:tint="@color/cardview_light_background" />
+
+                <ImageButton
+                    android:id="@+id/btnUPDislike"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/down_copyy"
+                    android:tint="@color/cardview_light_background" />
+
+                <ImageButton
+                    android:id="@+id/btnUPLike"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:scaleType="fitXY"
+                    android:tint="@color/cardview_light_background"
+                    app:srcCompat="@drawable/upp_copyy" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutViewFlagged"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/com_facebook_likeview_text_color"
+            android:orientation="vertical"
+            android:radius="20dp"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="23dp"
+                android:layout_marginTop="16dp"
+                android:text="This post has been flagged"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnViewFlaggedPost"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnViewFlaggedPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/transparent"
+                android:text="View"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_back"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtPostDetailsText"
+        android:layout_width="300sp"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Posted By"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtPostDetailsCreator"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="on"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtPostDetailsTime"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+</LinearLayout>

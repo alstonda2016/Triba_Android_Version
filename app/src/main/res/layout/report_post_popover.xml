@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_back"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:gravity="center"
+
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="TextView"
+
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btnBreaksRule1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Political"
+        android:textColor="@color/tribaUp"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btnBreaksRule2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Bullying"
+        android:textColor="@color/tribaUp"
+        android:textSize="30sp" />
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_android"
+    android:orientation="vertical"
+    tools:context="com.davida.tatwpbnw.advancedInfoActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/advancedInfo_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_messager_back_icon"
+
+        app:title=" "
+        app:titleTextColor="@color/colorForTextInDarkColor">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtUserProfileNameAdvancedInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.096" />
+
+            <TextView
+                android:id="@+id/txtUserProfileName2AdvancedInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.096" />
+
+            <TextView
+                android:id="@+id/txtKarmaInvisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/com_smart_login_code"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.096" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/advancedInfoImgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginRight="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="#555555"
+
+            android:padding="1dp"
+            android:radius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tribalogotextnoshadowontextcopy" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btnGoToUserHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/btnRemoveAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorForTextInDarkColor"
+        android:text="User Post History"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <Button
+        android:id="@+id/btnRemoveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorForTextInDarkColor"
+        android:text="Signout"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtAdvancedStatus"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:id="@+id/txtAdvancedStrikedNumber"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="italic"
+                tools:text="Strike History" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/profileListAdvanced"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:dividerHeight="5dp" />
+
+
+</LinearLayout>
